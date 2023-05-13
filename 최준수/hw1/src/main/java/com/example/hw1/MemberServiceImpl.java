@@ -43,8 +43,7 @@ public class MemberServiceImpl implements MemberService {
             }
         }
 
-        double average = totalScore / count;
-        return average;
+        return totalScore / count;
     }
 
     @Override

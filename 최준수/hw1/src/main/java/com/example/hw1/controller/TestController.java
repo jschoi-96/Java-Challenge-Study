@@ -37,8 +37,8 @@ public class TestController {
     }
 
     @PostMapping("/scoreTest")
-    public void scoreTest(@RequestBody List<scoreDto> scores) {
-        System.out.println(scores);
+    public double scoreTest(@RequestBody List<scoreDto> scores){
+        return memberService.SubjectAvg(scores);
     }
 
 
